@@ -47,4 +47,22 @@ void computerOneInfoOutput()
 	networkInfoOne(DNSsuffix, IPv6, IPv4);
 }
 
+void computerOneFunctions()
+{
+	int choice;
+	
+	printf("--- COMPUTER: 1 ~{WALT3R}~ ---\n");
+	printf("(1) View Computer information\n");
+
+	printf("> ");
+	scanf("%d", &choice);
+
+	switch(choice)
+	{
+		case 1:
+			computerOneInfoOutput();
+			break;
+	}
+}
+
 #endif

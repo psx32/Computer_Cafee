@@ -47,10 +47,10 @@ void adminMenu()
 	int choice;
 
 	printf("-- COMPKAFE ~{$ADMIN}~ -- \n");
-	printf("(1) VIEW ALL COMPUTERS INFORMATION\n");
-	printf("(2) VIEW COMPUTER_1 \n");
-	printf("(3) VIEW COMPUTER_2 \n");
-	printf("(4) VIEW COMPUTER_3 \n");
+	printf("(1) VIEW COMPUTER_1\n");
+	printf("(2) VIEW COMPUTER_2 \n");
+	printf("(3) VIEW COMPUTER_3 \n");
+	printf("(4) VIEW ALL COMPUTERS \n");
 
 	printf("\n>> ");
 	scanf("%d", &choice);
@@ -58,16 +58,16 @@ void adminMenu()
 	switch(choice)
 	{
 		case 1:
-			outputAllInformation();
+			outputMachineOne(); 		// Machine: 1
 			break;
 		case 2:
-			outputMachineOne(); // Machine: 1
+			outputMachineTwo(); 		// Macine: 1
 			break;
 		case 3:
-			outputMachineTwo(); // Machine: 2
+			outputMachineThree(); 		// Machine: 3
 			break;
 		case 4:
-			outputMachineThree(); // Machine: 3
+			outputAllInformation();;	// Output all of the machines
 			break;
 	}
 }

@@ -22,7 +22,7 @@ void networkInfoTwo(char DNSsuffix[60], char IPv6[60], char IPv4[35])
 void computerTwoInfoOutput()
 {
 	// Hardware information
-	char sysName[45] = "SCHEINDER-DESKTOP-2";
+	char sysName[45] = "SCHNEIDER-DESKTOP-2";
 	char OSName[45] = "Microsoft Windows 10 Pro";
 	char version[45] = "10.0.16299 Build 16299";
 	char OSman[45] = "Microsoft Corporation";
@@ -44,6 +44,25 @@ void computerTwoInfoOutput()
 
 	printf("-- NETWORK INFORMATION --\n");
 	networkInfoTwo(DNSsuffix, IPv6, IPv4);
+}
+
+void computerTwoFunctions()
+{
+	int choice;
+
+	printf("--- COMPUTER: 2 ~{SCHN3ID3R}~\n");
+	printf("(1) View Computer information\n");
+
+	printf("> ");
+	scanf("%d", &choice);
+
+	switch(choice)
+	{
+		case 1:
+			computerTwoInfoOutput();
+			break;
+
+	}
 }
 
  #endif

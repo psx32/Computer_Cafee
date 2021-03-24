@@ -47,4 +47,23 @@ void computerThreeInfoOutput()
 	networkInfoThree(DNSsuffix, IPv6, IPv4);
 }
 
+void computerThreeFunctions()
+{
+	int choice;
+
+	printf("--- COMPUTER: 3 ~{B4TM4N}~ ---\n");
+	printf("(1) View Computer information\n");
+
+	printf("> ");
+	scanf("%d", &choice);
+
+	switch(choice)
+	{
+		case 1:
+			computerThreeInfoOutput();
+			break;
+
+	}
+}
+
 #endif
