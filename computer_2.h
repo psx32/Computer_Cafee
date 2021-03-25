@@ -1,3 +1,4 @@
+#include "registerToSystem.h"
 #include <stdio.h>
 #ifndef COMPUTER_TWO_H
 #define COMPUTER_TWO_H
@@ -52,6 +53,7 @@ void computerTwoFunctions()
 
 	printf("--- COMPUTER: 2 ~{SCHN3ID3R}~\n");
 	printf("(1) View Computer information\n");
+	printf("(2) Register to the Cafe\n");
 
 	printf("> ");
 	scanf("%d", &choice);
@@ -60,6 +62,9 @@ void computerTwoFunctions()
 	{
 		case 1:
 			computerTwoInfoOutput();
+			break;
+		case 2:
+			registerToSystem();
 			break;
 
 	}
